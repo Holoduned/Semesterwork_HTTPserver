@@ -11,6 +11,7 @@ public class HttpServer : IDisposable
     public ServerStatus Status = ServerStatus.Stop;
     private ServerSettings _serverSetting=new ServerSettings();
     private HttpListener _listener;
+    
   
     public HttpServer() 
     {

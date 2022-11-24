@@ -46,13 +46,13 @@
           >
           <div style="padding-top: 30px">
             <div class="login_form_text">Имя аккаунта</div>
-            <input type="text" name="login_name" class="login_form_input" />
+            <input type="text" id="login_name" class="login_form_input" />
           </div>
           <div class="login_form_textfield">
             <div class="login_form_text">Пароль</div>
             <input
               type="password"
-              name="login_password"
+              id="login_password"
               class="login_form_input"
             />
           </div>
@@ -73,4 +73,18 @@
   <div class="mona_img">
     <img src="img/Icon_Emoji_022_Mona_Hehe.webp" alt="by" />
   </div>
+
+  <script type="text/javascript">
+    let login_name = document.querySelector("#login_name");
+    login_name.oninput = function () {
+      this.value = this.value.substr(0, 30);
+    };
+  </script>
+
+  <script type="text/javascript">
+    let login_password = document.querySelector("#login_password");
+    login_password.oninput = function () {
+      this.value = this.value.substr(0, 30);
+    };
+  </script>
 </body>

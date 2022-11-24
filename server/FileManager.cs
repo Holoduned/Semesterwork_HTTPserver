@@ -10,11 +10,11 @@ public class FileManager
         if (Directory.Exists(filePath))
         {
                 
-            filePath = filePath + "/main/index.html";
+            filePath = filePath + "main/index.html";
 
             if (File.Exists(filePath))
             {
-                //Console.WriteLine(filePath);
+                Console.WriteLine(filePath);
                 buffer = File.ReadAllBytes(filePath);
             }
 
