@@ -1,0 +1,76 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Войти</title>
+  <link rel="stylesheet" href="login_style.css" />
+  <link
+    rel="shortcut icon"
+    href="img/Icon_Adventurers'_Guild.webp"
+    type="image/x-icon"
+  />
+</head>
+<body
+  style="
+    background-image: url('img/login.png');
+    background-size: 100%;
+    height: 700px;
+  "
+>
+  <div style="flex-direction: column">
+    <div class="header_container">
+      <div class="back_container">
+        <a href="../main/index.html"
+          ><img class="back_icon" src="img/-.svg"
+        /></a>
+      </div>
+      <div class="registr_container">
+        <a class="text_right">Нет аккаунта?</a>
+        <a href="../registration/registr.html">
+          <button class="button_registr">Создать</button></a
+        >
+      </div>
+    </div>
+    <div class="container">
+      <div class="login_container">
+        <div class="in_login_container">
+          <a
+            style="
+              font-family: 'Montserrat-2';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 45px;
+              color: #ffffff;
+            "
+            >ДОБРО ПОЖАЛОВАТЬ</a
+          >
+          <div style="padding-top: 30px">
+            <div class="login_form_text">Имя аккаунта</div>
+            <input type="text" name="login_name" class="login_form_input" />
+          </div>
+          <div class="login_form_textfield">
+            <div class="login_form_text">Пароль</div>
+            <input
+              type="password"
+              name="login_password"
+              class="login_form_input"
+            />
+          </div>
+        </div>
+        <div class="checkbox">
+          <label class="control control-checkbox">
+            Запомнить меня
+            <input type="checkbox" checked="checked" />
+            <div class="control_indicator"></div>
+          </label>
+        </div>
+        <div class="button_container">
+          <button class="button_login">Войти</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mona_img">
+    <img src="img/Icon_Emoji_022_Mona_Hehe.webp" alt="by" />
+  </div>
+</body>

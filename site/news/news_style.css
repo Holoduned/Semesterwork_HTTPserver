@@ -1,0 +1,84 @@
+* {
+  box-sizing: content-box;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 55px;
+  flex-direction: row;
+}
+.back_container {
+  margin-left: 122px;
+  float: left;
+}
+.back_icon {
+  height: 25px;
+  width: 25px;
+}
+.icons-right {
+  margin-right: 122px;
+  float: right;
+}
+.icon_container {
+  background-color: transparent;
+  margin: 10px;
+  text-decoration: none;
+}
+.icon {
+  height: 25px;
+  width: 25px;
+}
+.carousel_size {
+  margin-left: 122px;
+  margin-right: 122px;
+  justify-content: center;
+  padding-top: 30px;
+  width: 1000;
+  margin: auto;
+}
+.control_pos_left {
+  margin-left: -150px;
+}
+.control_pos_right {
+  margin-right: -150px;
+}
+@font-face {
+  font-family: "Montserrat-1";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""),
+    url("../fonts/montserrat-v25-cyrillic-300.woff2") format("woff2"),
+    url("../fonts/montserrat-v25-cyrillic-300.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-2";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/montserrat-v25-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v25-cyrillic-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-3";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/montserrat-v25-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v25-cyrillic-700.woff") format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/playfair-display-v30-cyrillic-800.eot");
+  src: local(""),
+    url("../fonts/playfair-display-v30-cyrillic-800.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/playfair-display-v30-cyrillic-800.woff2") format("woff2"),
+    url("../fonts/playfair-display-v30-cyrillic-800.woff") format("woff"),
+    url("../fonts/playfair-display-v30-cyrillic-800.ttf") format("truetype"),
+    url("../fonts/playfair-display-v30-cyrillic-800.svg#PlayfairDisplay")
+      format("svg");
+}

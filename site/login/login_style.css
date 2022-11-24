@@ -1,0 +1,223 @@
+* {
+  box-sizing: content-box;
+}
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 55px;
+  flex-direction: row;
+}
+.back_container {
+  margin-left: 116px;
+  float: left;
+}
+.back_icon {
+  height: 25px;
+  width: 25px;
+}
+.registr_container {
+  margin-right: 116px;
+  float: right;
+}
+.text_right {
+  font-family: "Montserrat-1";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 45px;
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+  margin-right: 24px;
+}
+.button_registr {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #e2dbbf;
+  color: #000000;
+  border: 2px solid #e2dbbf;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 5px 20px;
+  font-family: "Montserrat-2";
+  font-style: normal;
+  font-weight: 400;
+}
+.button_registr:hover {
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+.login_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.35);
+  width: 500px;
+  height: 500px;
+}
+.in_login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login_form_text {
+  font-family: "Montserrat-1";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.login_form_input {
+  border-radius: 2px;
+  color: white;
+  padding: 10px;
+  background-color: #0e103b;
+  outline: none;
+  font-size: 15px;
+  border: 1px solid#0E103B;
+  width: 250px;
+  border-radius: 15px;
+}
+.button_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.button_login {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #e2dbbf;
+  color: #000000;
+  border: 2px solid #e2dbbf;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 5px 70px;
+  font-family: "Montserrat-2";
+  font-style: normal;
+  font-weight: 400;
+}
+.button_registr:hover {
+  text-decoration: none;
+}
+.mona_img {
+  position: relative;
+  width: 256px;
+  margin-top: -220px;
+  margin-left: 930px;
+}
+.checkbox {
+  margin-left: 120px;
+  padding-top: 20px;
+}
+.control {
+  font-family: "Montserrat-1";
+  color: white;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control_indicator {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #0e103b;
+  border: 0px solid #000000;
+  border-radius: 0px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: #0e103b;
+}
+
+.control input:checked ~ .control_indicator {
+  background: #0e103b;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+  background: #0e103b;
+}
+.control input:disabled ~ .control_indicator {
+  background: #e6e6e6;
+  opacity: 0;
+  pointer-events: none;
+}
+.control_indicator:after {
+  box-sizing: unset;
+  content: "";
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+.control-checkbox .control_indicator:after {
+  left: 7px;
+  top: 1px;
+  width: 4px;
+  height: 12px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+  border-color: #7b7b7b;
+}
+@font-face {
+  font-family: "Montserrat-1";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""),
+    url("../fonts/montserrat-v25-cyrillic-300.woff2") format("woff2"),
+    url("../fonts/montserrat-v25-cyrillic-300.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-2";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/montserrat-v25-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v25-cyrillic-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat-3";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../fonts/montserrat-v25-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v25-cyrillic-700.woff") format("woff");
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/playfair-display-v30-cyrillic-800.eot");
+  src: local(""),
+    url("../fonts/playfair-display-v30-cyrillic-800.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/playfair-display-v30-cyrillic-800.woff2") format("woff2"),
+    url("../fonts/playfair-display-v30-cyrillic-800.woff") format("woff"),
+    url("../fonts/playfair-display-v30-cyrillic-800.ttf") format("truetype"),
+    url("../fonts/playfair-display-v30-cyrillic-800.svg#PlayfairDisplay")
+      format("svg");
+}
